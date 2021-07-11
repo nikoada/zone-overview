@@ -62,6 +62,12 @@ export function App() {
         <option value = 'default'> All zones   
         </option>  
         <option value = 'Kitchen'> Kitchen  
+        </option>
+        <option value = 'Server room'> Kitchen  
+        </option>
+        <option value = 'Lobby'> Kitchen  
+        </option>      
+        <option value = 'Basement'> Kitchen  
         </option>  
         <option value = 'Conference room'> Conference room   
         </option>
