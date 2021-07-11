@@ -8,24 +8,36 @@ export function App() {
   const [schedules, setSchedules] = useState([
     {
       id: generateId(),
-      temp: 33,
-      unit: '°​C',
-      fromTime: '11:00',
-      tillTime: '13:00',
-      celsius: '33',
-      fahrenheit: '91.4',
-      zones: ['default', 'Kitchen', 'Server', 'Room 4']
+      fromTime: '08:00',
+      tillTime: '16:00',
+      celsius: '22',
+      fahrenheit: '71.6',
+      zones: ['default', 'Kitchen', 'Server room', 'Room 4']
     },
     {
       id: generateId(),
-      temp: 44,
-      unit: '°F',
+      fromTime: '16:00',
+      tillTime: '17:00',
+      celsius: '24',
+      fahrenheit: '75.2',
+      zones: ['default', 'Room 4', 'Server room', 'Conference room']
+    },
+    {
+      id: generateId(),
       fromTime: '11:00',
       tillTime: '13:00',
-      celsius: '44',
-      fahrenheit: '111.2',
-      zones: ['default', 'Room 4', 'Server', 'Conference room']
+      celsius: '18',
+      fahrenheit: '64.4',
+      zones: ['default', 'Basement']
     },
+    {
+      id: generateId(),
+      fromTime: '11:00',
+      tillTime: '13:00',
+      celsius: '24',
+      fahrenheit: '75.2',
+      zones: ['default', 'Lobby']
+    }
   ]);
 
   const [zoneToFilter, setZoneToFilter] = useState('default')
@@ -63,11 +75,11 @@ export function App() {
         </option>  
         <option value = 'Kitchen'> Kitchen  
         </option>
-        <option value = 'Server room'> Kitchen  
+        <option value = 'Server room'> Server room  
         </option>
-        <option value = 'Lobby'> Kitchen  
+        <option value = 'Lobby'> Lobby  
         </option>      
-        <option value = 'Basement'> Kitchen  
+        <option value = 'Basement'> Basement  
         </option>  
         <option value = 'Conference room'> Conference room   
         </option>
